@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    background-image: url("todo.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color:black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: grey;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+button.delete {
+    background: black;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+button.delete:hover {
+    background: grey;
+}
